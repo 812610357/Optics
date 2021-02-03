@@ -14,10 +14,10 @@ ii = (sin(n * beta) ./ sin(beta)).^2;
 ii = ii ./ max(ii);
 I = id .* ii;
 
-plot(sintheta, id)
-plot(sintheta, I)
+plot(sintheta, id,'LineWidth',2)
+plot(sintheta, I,'LineWidth',2)
 
-xlabel('{sin \theta}')
-ylabel('{I/I_0}')
-title('Light-strength distribution')
-legend('{I_d}', '{I}')
+xlabel('{sin \theta}','fontsize',24)
+ylabel('{I/I_0}','fontsize',24)
+title('Light-strength distribution','fontsize',36)
+legend('{I_d}', '{I}','fontsize',24)
